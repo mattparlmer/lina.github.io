@@ -1,7 +1,6 @@
 # linalu1.github.io
 ## Git Workflow
-# Before initialzing, make sure you are in the right directory!!!
-
+* Before initializing, make sure you are in the right directory!!!
 * git init (initialize)
 
 * git remote add origin https://github.com/...
