@@ -16,3 +16,11 @@ function replaceName() {
 
 // document.onclick = replaceName;
 
+var findBrowser = function() {
+	console.log('what')
+	var getBrowserProps = navigator.userAgent;
+	document.getElementById('browser-props').innerHTML = getBrowserProps;
+};
+
+findBrowser();
+
