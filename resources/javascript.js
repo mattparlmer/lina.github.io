@@ -14,5 +14,5 @@ function replaceName() {
   document.getElementById('user-name').innerHTML = myNewName;
 }
 
-document.onclick = replaceName;
+// document.onclick = replaceName;
 
