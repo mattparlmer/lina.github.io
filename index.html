@@ -6,7 +6,7 @@
     <title>About Me</title>
     <link href="resources/bootstrap.css" rel="stylesheet">
     <link href="resources/bootstrap-responsive.css" rel="stylesheet">
-    <link href="resources/smart-app-banner.min.css" rel="stylesheet">
+    <!--<link href="resources/smart-app-banner.min.css" rel="stylesheet">-->
 
     <!-- <link rel="stylesheet" href="resources/smart-app-banner.min.css" type="text/css"> -->
 
@@ -25,11 +25,13 @@
     </br>
     hello world
     <script src="resources/javascript.js" type="text/javascript" charset="utf-8"></script>
-    <script src="resources/smart-app-banner.min.js" type="text/javascript" charset="utf-8"></script>
+    <!--<script src="resources/smart-app-banner.min.js" type="text/javascript" charset="utf-8"></script>-->
     1
-    <input type="number" inputmode="numeric">
+    <!-- <input type="number" inputmode="numeric"> -->
     2
-    <input type="number" inputmode="numeric" pattern="[0-9]*" title="Non-negative integral number">
+    <!-- <input type="number" inputmode="numeric" pattern="[0-9]*" title="Non-negative integral number"> -->
+    3
+    <!-- <input type="number" inputmode="numeric" pattern="[0-9]*" title="Non-negative integral number" text='cc' id=""> -->
 
 <!--
     <div id="header" class="content">
@@ -99,5 +101,47 @@
     <div id="copyright" class="content">
       &copy; 2012 [YOUR NAME HERE], All Rights Reserved.
     </div> -->
+<!--     netflix's
+    <input name="cardNumber" smopname="num" id="cardNumber-CC" class="cardNumber" type="text" value="************0891" pattern="[0-9]*">
+
+    amazon's 
+    <input name="addCreditCardNumber" size="20" maxlength="20">
+
+
+    <form action="https://yoursite.com/credit-card-purchase" method="POST">
+    Credit Card Number 1<br />
+    <input  type="number" autocomplete="cc-number" name="cardNumber" id="cardNumber" value="" placeholder="*** **** *** ****" />
+    <br />
+    Expiry month <br /> 
+    <input type="number"  name="expirationMonth" id="cardExpirationMonth" />
+    <br />
+    Expiry year <br />
+    <input type="number" name="expirationYear" id="cardExpirationYear" />
+    <br />
+    <br />
+    <input type="submit" value="Purchase" id="purchase">
+    </form> -->
+
+
+
+    more
+    <input type="text" id="cardNumber" placeholder="CC number">
+
+    <select id="cardExpirationMonth">
+      <option value="01">01</option>
+      <option value="02">02</option>
+      ...
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+
+    <select id="cardExpirationYear">
+      <option value="2014">2014</option>
+      <option value="2015">2015</option>
+      ...
+      <option value="2024">2024</option>
+      <option value="2025">2025</option>
+    </select>
+
   </body>
 </html>
