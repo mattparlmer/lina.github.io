@@ -149,7 +149,9 @@
     <div>upload photo</div>
     <input className='upload-photo-input' type='file' accept='image/*' capture='camera'/>
 
-    <script>
+    <script type="text/javascript">
+    
+      console.log('js running')
       function getGPSLocation(){
           navigator.geolocation.getCurrentPosition(foundLocation, noLocation);
           
