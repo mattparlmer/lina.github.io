@@ -187,9 +187,9 @@
           {
               var lat = position.coords.latitude;
               var long = position.coords.longitude;
-              alert('Found location: ' + lat + ', ' + long);
+              console.log('Found location: ' + lat + ', ' + long);
               var distanceValue = distance(long, lat, eventLongitude, eventLatitude)
-              alert('Distance from Embarcadero is:', distanceValue);
+              console.log('Distance from Embarcadero is:', distanceValue);
               
           }
           
