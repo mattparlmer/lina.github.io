@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html> <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="apple-itunes-app" content="app-id=960059100, app-argument=standapp://">
@@ -10,21 +9,53 @@
 
     <!-- <link rel="stylesheet" href="resources/smart-app-banner.min.css" type="text/css"> -->
 
-    <!-- <link rel="stylesheet" href="resources/layout.css" type="text/css"> -->
+    <link rel="stylesheet" href="resources/layout.css" type="text/css">
 
     <!-- Import before resources/javascript.js -->
-    
+
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js" type="text/javascript"></script>
-    
+
     <!-- Import after jQuery.min.js -->
 
 
   </head>
   <body>
+
     <div id='browser-props'></div>
     </br>
     hello world
-    <script src="resources/javascript.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <div class="deploy-command-wrapper">
+      <div>Enter Deployment History</div>
+
+      <div>
+        <input class="deploy-command-input" id="deploy-command-input-field" placeholder="2016-03-04T00:34:23,master,afde2f8-original.zip,49075138-465f-4295-b2d4-0a9a1cdd8e60"/>
+      </div>
+      <button class="deploy-command-submit-button" onclick="getDeploymentCommand()">Give me the command</button>
+
+      <h3>Test Server</h3>
+      <div id="deploy-command-text-test-server"></div>
+
+      <h3>Staging Server</h3>
+      <div id="deploy-command-text-staging-server"></div>
+
+      <h3>Prod Server API Layer</h3>
+      <div id="deploy-command-text-prod-server-api"></div>
+
+      <h3>Prod Server Web Layer</h3>
+      <div id="deploy-command-text-prod-server-web"></div>
+
+      <h3>Prod Server Cron Layer</h3>
+      <div id="deploy-command-text-prod-server-cron"></div>
+
+
+    </div>
+    <hr/>
+    <hr/>
+    <hr/>
+
+
     <!--<script src="resources/smart-app-banner.min.js" type="text/javascript" charset="utf-8"></script>-->
     1
     <!-- <input type="number" inputmode="numeric"> -->
@@ -40,35 +71,35 @@
         My name is <span id="user-name">Lina</span> and I'm a software programmer.
       </p>
     </div>
-    
+
     <div class="content clearfix"> -->
       <!-- Page Navigation -->
 
-<!--       <div id="nav"> 
+<!--       <div id="nav">
         <img src="resources/picture.jpg">
         <h2>Contents</h2>
 
-        <ul>          
+        <ul>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#hobbies">Hobbies</a></li>
           <li><a href="#fun-facts">Fun Facts</a></li>
         </ul>
       </div>
-      
-      <div id="main">  
+
+      <div id="main">
         <h2 id="projects">Projects</h2>
         <p>Describe the kinds of projects you like to work on and give a brief overview of how you accomplished them...</p>
-        
+
         <h3>Project #1 Title</h3>
         <p>Project #1 Description...</p>
-          
+
         <h3>Project #2 Title</h3>
         <p>Project #2 Description...</p>
 
         <h2 id="hobbies">Hobbies</h2>
-        
+
         <p>What else do you do in your spare time?</p>
-        
+
         <h3>Item #1 Title</h3>
         <p>Use this paragraph to explain Item #1</p>
         <ul>
@@ -84,7 +115,7 @@
           <li>Another cool thing I did</li>
           <li>Final cool thing I did</li>
         </ul>
-        
+
         <h2 id="fun-facts">Fun Facts</h2>
         <h3>Subhead</h3>
         <p>Use this list to tell us some fun things about yourself.</p>
@@ -93,26 +124,28 @@
           <li>Another cool thing I did</li>
           <li>Final cool thing I did</li>
         </ul>
-        
+
 
       </div>
     </div>
-    
+
     <div id="copyright" class="content">
       &copy; 2012 [YOUR NAME HERE], All Rights Reserved.
     </div> -->
+    <script src="resources/javascript.js" type="text/javascript" charset="utf-8"></script>
+
     netflix's
     <input name="cardNumber" maxLength='16' id="cardNumber-CC" class="cardNumber" type="text" pattern="[0-9]*">
 
-    amazon's 
+    amazon's
     <!-- <input name="addCreditCardNumber" size="20" maxlength="20"> -->
 
-<!-- 
+<!--
     <form action="https://yoursite.com/credit-card-purchase" method="POST">
     Credit Card Number 1<br />
     <input  type="number" autocomplete="cc-number" name="cardNumber" id="cardNumber" value="" placeholder="*** **** *** ****" />
     <br />
-    Expiry month <br /> 
+    Expiry month <br />
     <input type="number"  name="expirationMonth" id="cardExpirationMonth" />
     <br />
     Expiry year <br />
@@ -143,46 +176,46 @@
       <option value="2025">2025</option>
     </select> -->
     date input
-    <input type="date"> 
-    
-    
+    <input type="date">
+
+
     <div>upload photo</div>
     <input className='upload-photo-input' type='file' accept='image/*' capture='camera'/>
 
     <script type="text/javascript">
-      // Embarcadero station 
+      // Embarcadero station
       var eventLatitude = 37.792993
       var eventLongitude = -122.396896
-    
+
       function distance(lon1, lat1, lon2, lat2) {
         var R = 6371; // Radius of the earth in km
         var dLat = (lat2-lat1).toRad();  // Javascript functions in radians
-        var dLon = (lon2-lon1).toRad(); 
+        var dLon = (lon2-lon1).toRad();
         var a = Math.sin(dLat/2) * Math.sin(dLat/2) +
-                Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) * 
-                Math.sin(dLon/2) * Math.sin(dLon/2); 
-        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)); 
+                Math.cos(lat1.toRad()) * Math.cos(lat2.toRad()) *
+                Math.sin(dLon/2) * Math.sin(dLon/2);
+        var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
         var d = R * c; // Distance in km
         return d;
       }
-      
+
       /** Converts numeric degrees to radians */
       if (typeof(Number.prototype.toRad) === "undefined") {
         Number.prototype.toRad = function() {
           return this * Math.PI / 180;
         }
       }
-      
+
       // window.navigator.geolocation.getCurrentPosition(function(pos) {
-        // console.log(pos); 
+        // console.log(pos);
         // console.log(
-          
-        // ); 
+
+        // );
       // });
       console.log('js running')
       function getGPSLocation(){
           navigator.geolocation.getCurrentPosition(foundLocation, noLocation);
-          
+
           function foundLocation(position)
           {
               var lat = position.coords.latitude;
@@ -190,13 +223,13 @@
               console.log('Found location: ' + lat + ', ' + long);
               var distanceValue = distance(long, lat, eventLongitude, eventLatitude)
               console.log('Distance from Embarcadero is:', distanceValue.toString());
-              
+
           }
-          
+
           function noLocation()
           {
-              alert('Could not find location');
-          }    
+              console.log('Could not find location');
+          }
       }
       getGPSLocation();
     </script>

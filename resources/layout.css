@@ -1,6 +1,6 @@
 /*
  * Add your CSS styles here
- * 
+ *
  */
 
 body {
@@ -68,3 +68,25 @@ a:hover {
 .clearfix:before, .clearfix:after { content:""; display:table; }
 .clearfix:after { clear:both; }
 .clearfix { zoom:1; }
+
+
+/*
+	Deployment Processor
+*/
+
+.deploy-command-wrapper {
+	text-align:center;
+	margin-top:10%;
+
+}
+
+.deploy-command-input {
+	margin-top: 1%;
+
+	width: 50%;
+
+}
+
+.deploy-command-submit-button {
+	margin-top: 1%;
+}
