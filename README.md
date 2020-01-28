@@ -1,1 +1,1 @@
-# stopSorona
+Coronavirus prevention guide
