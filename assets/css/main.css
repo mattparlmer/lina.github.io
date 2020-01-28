@@ -79,6 +79,9 @@ input, select, textarea {
 .more-info-wrap {
 	text-align: left;
 }
+.pageview-counter-wrap {
+	visibility: hidden;
+}
 /* .share-buttons img {
 	width: 50px;
 	padding: 5px;
