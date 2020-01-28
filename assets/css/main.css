@@ -80,7 +80,7 @@ input, select, textarea {
 	text-align: left;
 }
 .pageview-counter-wrap {
-	visibility: hidden;
+	/* visibility: hidden; */
 }
 /* .share-buttons img {
 	width: 50px;
