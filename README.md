@@ -1,4 +1,4 @@
-# stop corona virus
+# Coronavirus Prevention Guide
 
-# Future features
-### translation to other languages, especially Simplified Chinese and Tranditional Chinese, and primary languages of currently infected countries. 
+## Future features
+- Translation to other languages, especially Simplified Chinese and Tranditional Chinese, and primary languages of currently infected countries.
